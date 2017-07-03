@@ -1,0 +1,22 @@
+{
+  "ammo_type": "PBAOE",
+  "burn_damage": 200,
+  "burn_radius": 50,
+  "damage": 2000,
+  "damage_volume": {
+    "burnable_remove_radius": 50.0,
+    "delay": 1.5,
+    "initial_radius": 0,
+    "radius_accel": -40.0,
+    "radius_velocity": 200.0
+  },
+  "full_damage_splash_radius": 20,
+  "impact_decals": [
+    "/pa/effects/specs/nuke_scorch_01.json"
+  ],
+  "sim_fire_effect": "/pa/units/land/energy_plant_adv/explosion_ent.json",
+  "splash_damage": 2000,
+  "splash_damages_allies": true,
+  "splash_damages_orbital": false,
+  "splash_radius": 50
+}

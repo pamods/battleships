@@ -1,0 +1,69 @@
+{
+  "TEMP_texelinfo": 2.37699,
+  "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+  "build_metal_cost": 20,
+  "command_caps": [],
+  "description": "Detonates when enemy units are in proximity.",
+  "display_name": "Sea Mine",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/barrier"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/barrier",
+      "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx"
+    }
+  },
+  "guard_layer": "WL_AnySurface",
+  "max_health": 5,
+  "mesh_bounds": [
+    4.0,
+    4.0,
+    1.0
+  ],
+  "model": {
+    "filename": "/pa/units/sea/sea_mine/sea_mine.papa"
+  },
+  "navigation": {
+    "acceleration": 0,
+    "brake": 0,
+    "move_speed": 0,
+    "turn_speed": 0,
+    "type": "deepwater"
+  },
+  "physics": {
+    "radius": 1,
+    "shape": "sphere"
+  },
+  "recon": {
+    "observable": {
+      "layer": "mine"
+    },
+    "observer": {
+      "items": [
+        {
+          "channel": "radar",
+          "layer": "surface_and_air",
+          "radius": 15,
+          "shape": "sphere"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 7.0
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "strategic_icon_priority": 3,
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root",
+      "spec_id": "/pa/units/land/land_mine/land_mine_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Mobile"
+  ],
+  "wreckage_health_frac": 0.0
+}

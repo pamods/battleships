@@ -1,0 +1,71 @@
+{
+  "ammo_type": "AMMO_Projectile",
+  "audio_loop": "/SE/Movement/missile/missileship_fly_loop",
+  "burn_damage": 15,
+  "burn_duration": 2.5,
+  "burn_radius": 2,
+  "cruise_height": 20,
+  "damage": 625,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/bomber_adv",
+      "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
+    }
+  },
+  "flight_layer": "Air",
+  "flight_type": "Staged",
+  "fx_trail": {
+    "filename": "/pa/units/sea/destroyer/destroyer_missile_trail.pfx",
+    "offset": [
+      0.0,
+      5.5,
+      0.0
+    ]
+  },
+  "influence_radius": 800,
+  "initial_velocity": 50.0,
+  "lifetime": 7,
+  "max_health": 5,
+  "max_velocity": 90.0,
+  "model": {
+    "filename": "/pa/units/air/missile/missile.papa"
+  },
+  "physics": {
+    "add_to_spatial_db": true,
+    "gravity_scalar": 1,
+    "ignore_gravity": true,
+    "push_class": 1,
+    "radius": 2
+  },
+  "spawn_layers": "WL_Air",
+  "splash_damage": 0,
+  "splash_damages_allies": false,
+  "splash_radius": 0,
+  "stages": [
+    {
+      "ignores_LOS": true,
+      "ignores_gravity": true,
+      "rotates_to_velocity": true,
+      "stage_change_height": 20,
+      "stage_duration": 80,
+      "stage_turn_rate": 180
+    },
+    {
+      "ignores_LOS": true,
+      "ignores_gravity": true,
+      "rotates_to_velocity": true,
+      "stage_change_range": 30,
+      "stage_duration": 0,
+      "stage_turn_rate": 160
+    },
+    {
+      "ignores_LOS": false,
+      "ignores_gravity": false,
+      "rotates_to_velocity": true,
+      "stage_duration": 5000,
+      "stage_turn_rate": 100
+    }
+  ],
+  "turn_rate": 0,
+  "wreckage_health_frac": 0.0
+}

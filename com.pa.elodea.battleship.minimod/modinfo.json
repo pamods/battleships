@@ -1,0 +1,18 @@
+{
+  "author": "Elodea",
+  "build": "105067",
+  "category": [
+    "in-game",
+    "server-mod"
+  ],
+  "context": "server",
+  "date": "2017/07/02",
+  "description": "Naval battles gameplay mod for water planets only",
+  "display_name": "Battleship",
+  "enabled": true,
+  "forum": "https://forums.uberent.com/threads/rel-battleship.70716",
+  "icon": "http://i.imgur.com/pxtQrre.jpg",
+  "identifier": "com.elodea.battleship.minimod",
+  "priority": 100,
+  "version": "2.7"
+}

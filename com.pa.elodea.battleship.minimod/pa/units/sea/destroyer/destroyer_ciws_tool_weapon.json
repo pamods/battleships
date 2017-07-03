@@ -1,0 +1,33 @@
+{
+  "ammo_capacity": 35,
+  "ammo_demand": 0,
+  "ammo_id": "/pa/units/sea/destroyer/destroyer_ciws_ammo.json",
+  "ammo_per_shot": 5,
+  "ammo_source": "time",
+  "anti_entity_targets": [
+    "/pa/units/sea/destroyer/destroyer_missile_ammo.json",
+    "/pa/units/air/bomber/bomber_ammo.json",
+    "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json",
+    "/pa/ammo/base_missiles/base_missile_tactical.json"
+  ],
+  "auto_attack": false,
+  "auto_task_type": "anti_entity",
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "idle_aim_delay": 1,
+  "manual_fire": true,
+  "max_range": 150,
+  "pitch_range": 89,
+  "pitch_rate": 3600,
+  "rate_of_fire": 2.4,
+  "spread_fire": true,
+  "target_layers": [
+    "WL_Air",
+    "WL_Orbital"
+  ],
+  "target_priorities": [
+    "Air",
+    "Orbital"
+  ],
+  "yaw_range": 180,
+  "yaw_rate": 3600
+}

@@ -1,0 +1,29 @@
+{
+  "ammo_capacity": 1425000,
+  "ammo_demand": 6000,
+  "ammo_id": "/pa/units/land/artillery_long/artillery_long_ammo.json",
+  "ammo_per_shot": 75000,
+  "ammo_source": "energy",
+  "arc_type": "ARC_high",
+  "auto_attack": false,
+  "base_spec": "/pa/tools/base_artillery_turret/base_artillery_turret.json",
+  "carpet_fire": true,
+  "carpet_wait_for_full_ammo": true,
+  "firing_arc_pitch": 1,
+  "firing_arc_yaw": 1,
+  "firing_standard_deviation": 6,
+  "manual_attack": true,
+  "max_firing_velocity": 700,
+  "max_range": 690,
+  "min_firing_velocity": 10,
+  "pitch_range": 89,
+  "pitch_rate": 4,
+  "rate_of_fire": 3,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface"
+  ],
+  "yaw_range": 360,
+  "yaw_rate": 4
+}

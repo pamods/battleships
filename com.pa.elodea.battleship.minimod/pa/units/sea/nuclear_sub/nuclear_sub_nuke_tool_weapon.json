@@ -1,0 +1,27 @@
+{
+  "ammo_capacity": 70,
+  "ammo_demand": 0,
+  "ammo_id": "/pa/units/sea/nuclear_sub/nuclear_sub_nuke_ammo.json",
+  "ammo_per_shot": 70,
+  "ammo_source": "time",
+  "arc_type": "ARC_High",
+  "auto_attack": false,
+  "auto_task_type": "none",
+  "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+  "firing_arc_pitch": 180,
+  "firing_arc_yaw": 180,
+  "manual_attack": true,
+  "max_range": 320,
+  "pitch_range": 0,
+  "pitch_rate": 180,
+  "rate_of_fire": 1,
+  "spread_fire": true,
+  "start_fully_charged": false,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface"
+  ],
+  "tool_type": "TOOL_Weapon",
+  "yaw_range": 0,
+  "yaw_rate": 180
+}

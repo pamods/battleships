@@ -1,0 +1,147 @@
+{
+  "TEMP_texelinfo": 22.1895,
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/sea/destroyer_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    }
+  },
+  "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+  "build_metal_cost": 660,
+  "description": "Ship of the line - heavy guns, missiles, and anti-missile lasers",
+  "display_name": "Orca",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/sea"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Sea_large",
+      "effect_scale": 1.0
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/sea/destroyer_fire",
+      "effect_scale": 5.0,
+      "effect_spec": "/pa/effects/specs/default_gun_smoke.pfx socket_rightMuzzle01 /pa/effects/specs/default_gun_smoke.pfx socket_leftMuzzle01"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/sea/destroyer_fire",
+      "effect_scale": 5.0,
+      "effect_spec": "/pa/effects/specs/default_gun_smoke.pfx socket_rightMuzzle02 /pa/effects/specs/default_gun_smoke.pfx socket_leftMuzzle02"
+    },
+    "fired2": {
+      "effect_spec": "/pa/units/sea/destroyer/destroyer_missile_launch.pfx socket_torpedoMuzzle"
+    },
+    "fired3": {
+      "audio_cue": "/SE/Weapons/bot/assault_fire",
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_torpedoMuzzle"
+    }
+  },
+  "fx_offsets": [
+    {
+      "filename": "/pa/units/sea/destroyer/destroyer_wake.pfx",
+      "type": "moving_forward"
+    }
+  ],
+  "guard_layer": "WL_AnySurface",
+  "guard_radius": 250,
+  "max_health": 2000,
+  "mesh_bounds": [
+    4,
+    24,
+    7
+  ],
+  "model": {
+    "animtree": "/pa/anim/anim_trees/destroyer_anim_tree.json",
+    "filename": "/pa/units/sea/destroyer/destroyer.papa"
+  },
+  "navigation": {
+    "acceleration": 30,
+    "brake": 90,
+    "move_speed": 10,
+    "park_stamp_cost": 20,
+    "park_stamp_type": "box",
+    "turn_speed": 35,
+    "type": "deepwater"
+  },
+  "nearby_target_tick_update_interval": 15,
+  "physics": {
+    "radius": 12,
+    "shape": "sphere"
+  },
+  "production": {
+    "energy": 1
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 170,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 22.0
+  },
+  "spawn_layers": "WL_DeepWater",
+  "tools": [
+    {
+      "aim_bone": "bone_pitch01",
+      "fire_event": "fired0",
+      "muzzle_bone": [
+        "socket_leftMuzzle01",
+        "socket_rightMuzzle01"
+      ],
+      "projectiles_per_fire": 2,
+      "record_index": 0,
+      "spec_id": "/pa/units/sea/destroyer/destroyer_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_pitch02",
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "socket_leftMuzzle02",
+        "socket_rightMuzzle02"
+      ],
+      "projectiles_per_fire": 2,
+      "record_index": 1,
+      "spec_id": "/pa/units/sea/destroyer/destroyer_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "fire_event": "fired2",
+      "muzzle_bone": [
+        "bone_turret01",
+        "bone_turret01"
+      ],
+      "record_index": 2,
+      "spec_id": "/pa/units/sea/destroyer/destroyer_missile_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "fire_event": "fired3",
+      "muzzle_bone": [
+        "socket_leftMuzzle01",
+        "socket_rightMuzzle01",
+        "socket_leftMuzzle02",
+        "socket_rightMuzzle02"
+      ],
+      "record_index": 3,
+      "spec_id": "/pa/units/sea/destroyer/destroyer_ciws_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Naval",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild"
+  ]
+}

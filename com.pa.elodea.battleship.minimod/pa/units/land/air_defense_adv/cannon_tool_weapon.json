@@ -1,0 +1,24 @@
+{
+  "ammo_id": "/pa/units/land/air_defense_adv/cannon_ammo.json",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+  "firing_standard_deviation": 4,
+  "max_firing_velocity": 400,
+  "max_range": 180,
+  "min_firing_velocity": 150,
+  "pitch_range": 360,
+  "pitch_rate": 180,
+  "range_height": 45,
+  "rate_of_fire": 4.5,
+  "target_layers": [
+    "WL_Orbital",
+    "WL_Air"
+  ],
+  "target_priorities": [
+    "Air & Bomber",
+    "WL_Air"
+  ],
+  "tool_type": "TOOL_Weapon",
+  "yaw_range": 360,
+  "yaw_rate": 360
+}

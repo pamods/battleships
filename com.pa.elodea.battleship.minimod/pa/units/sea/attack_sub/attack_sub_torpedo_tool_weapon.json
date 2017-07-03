@@ -1,0 +1,22 @@
+{
+  "ammo_id": "/pa/units/sea/attack_sub/attack_sub_torpedo_ammo.json",
+  "auto_attack": true,
+  "carpet_fire": true,
+  "firing_arc_pitch": 360,
+  "firing_arc_yaw": 360,
+  "idle_aim_delay": 1,
+  "max_range": 11,
+  "no_busy_auto_attack": true,
+  "pitch_range": 360,
+  "pitch_rate": 360,
+  "rate_of_fire": 5,
+  "self_destruct": true,
+  "target_layers": [
+    "WL_WaterSurface",
+    "WL_Underwater",
+    "WL_Seafloor"
+  ],
+  "tool_type": "TOOL_Weapon",
+  "yaw_range": 360,
+  "yaw_rate": 360
+}

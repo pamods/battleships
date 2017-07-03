@@ -1,0 +1,13 @@
+{
+  "ammo_type": "AMMO_Beam",
+  "armor_damage_map": {
+    "AT_Structure": 2.0
+  },
+  "collision_check": "target",
+  "collision_response": "impact",
+  "damage": 17,
+  "fx_collision_spec": "/pa/units/orbital/orbital_battleship/orbital_battleship_laser_impact.pfx",
+  "splash_damage": 15,
+  "splash_damages_allies": false,
+  "splash_radius": 10
+}

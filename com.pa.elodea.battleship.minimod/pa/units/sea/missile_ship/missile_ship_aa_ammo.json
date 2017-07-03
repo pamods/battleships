@@ -1,0 +1,42 @@
+{
+  "accel_rate": 5.0,
+  "base_spec": "/pa/ammo/base_missiles/base_missile_aa_seeking.json",
+  "damage": 60,
+  "flight_type": "Staged",
+  "initial_velocity": 25.0,
+  "lifetime": 15,
+  "max_velocity": 250.0,
+  "physics": {
+    "add_to_spatial_db": true,
+    "gravity_scalar": 5,
+    "ignore_gravity": true,
+    "push_class": 1,
+    "radius": 1
+  },
+  "splash_damage": 0,
+  "splash_radius": 0,
+  "stages": [
+    {
+      "ignores_LOS": true,
+      "ignores_gravity": true,
+      "rotates_to_velocity": true,
+      "stage_duration": 25,
+      "stage_turn_rate": 180
+    },
+    {
+      "ignores_LOS": true,
+      "ignores_gravity": true,
+      "rotates_to_velocity": true,
+      "stage_duration": 50,
+      "stage_turn_rate": 360
+    },
+    {
+      "ignores_LOS": false,
+      "ignores_gravity": true,
+      "rotates_to_velocity": true,
+      "stage_duration": 10000,
+      "stage_turn_rate": 3600
+    }
+  ],
+  "turn_rate": 360.0
+}
